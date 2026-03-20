@@ -40,3 +40,5 @@ Functions:
 
 ## Visualization of the results
 Plotting of the analysis results can use the 'NNVisualizer' class in file 'visualizer.py'. The functions and codes are pretty much self-explanatory. 
+
+Example script of usage can be found in the file 'test_anchor.py'. 
