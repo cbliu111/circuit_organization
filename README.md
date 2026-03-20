@@ -26,7 +26,7 @@ Functions:
 - 'get_activity_key_measures': calculate topological properties for the neural correlation graph, which is obtained by thresholding the neural pearson correlation matrix, including largest component fraction, susceptibility, global efficiency, small worldness, clustering coefficient, heterogeneity, spectral radius, algebraic connectivity, kcore, SIS indicator, Kuramoto Kc, diffusion mixing time, branching ratio, etc.
 - 'get_activity_measures': also calculate topological properties, besides the key measures, also including cumulative explained variance, principle direction indices, SVD transition matrix, normalized eigenvalues, and fitting of singular values to power-law spectrum.
 - 'get_grad_cov_parallel': compute the covariance of loss gradients using parallel distributed methods, where we have used vmap on jacrev for gathering the loss gradients, and compute the full covariance matrix using chunks on a single GPU. The outputs are the averaged loss gradients 'gm', the outer product of averaged gradients 'sm' and the covariance of gradients 'cov'.
-- 'get_hessian_block': calculate the full hessian matrix by dividing the matrix into small blocks, using the hessian-vector product for fast computation, the accuracy is checked and ensured by an independent testing script.
+- 'get_hessian_block': calculate the full hessian matrix by dividing the matrix into small blocks, using the hessian-vector product for fast computation, the accuracy is checked and ensured by an independent testing script 'verify_hessian.py'.
 - 'get_critical_connections': obtain critical connections for the function of the neural networks, these connections mostly corresponds to the active mode of the network, forming a circuit for prediction.
 - 'get_landscape': get the loss landscape for different directions.
 - 'get_per_data_loss': identify the distribution of loss landscapes for some training steps.
@@ -38,3 +38,5 @@ Functions:
 - 'weight_evolution_sim_single': simulate the self-reinforced redistribution model.
 - 'get_ccg_coupling_energy_evolve': compute the effective circuit potential.
 
+## Visualization of the results
+Plotting of the analysis results can use the 'NNVisualizer' class in file 'visualizer.py'. The functions and codes are pretty much self-explanatory. 
