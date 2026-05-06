@@ -1,0 +1,1 @@
+The overall running of all the training and analysis took over 2000 hours. Therefore, only a test run is reproduced in this capsule, the scripts for complete reproductive study is contained in the "full_run.sh" file. 

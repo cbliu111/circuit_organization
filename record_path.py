@@ -92,7 +92,7 @@ if __name__ == "__main__":
     neurons = args.neurons
     overwrite = args.overwrite
     test_point_indices = [i for i in range(0, 20)] + [i for i in range(20, 200, 10)] + [i for i in range(200, max_iter, 2000)] + [max_iter]
-    save_file = f'./autodl-tmp/train_path_init{init_type}_lr{lr}_bs{bs}_neurons{neurons}_max_iter{max_iter}.npz'
+    save_file = f'../results/train_path_init{init_type}_lr{lr}_bs{bs}_neurons{neurons}_max_iter{max_iter}.npz'
     if os.path.exists(save_file) and not overwrite:
         print(f"file: {save_file} exits, exit......", flush=True)
         sys.exit(0)
@@ -192,7 +192,7 @@ if __name__ == "__main__":
                 break
 
     training_path = np.stack(training_path).squeeze()
-    save_file = f'./autodl-tmp/train_path_init{init_type}_lr{lr}_bs{bs}_neurons{neurons}_max_iter{max_iter}.npz'
+    save_file = f'../results/train_path_init{init_type}_lr{lr}_bs{bs}_neurons{neurons}_max_iter{max_iter}.npz'
 
     np.savez(save_file,
              training_path=training_path,

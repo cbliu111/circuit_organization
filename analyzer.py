@@ -32,7 +32,7 @@ class NNAnalyzer:
     def __init__(self,
                  num_tasks=10,
                  device='cpu',
-                 data_folder="./autodl-tmp/",
+                 data_folder="../results/",
                  save_folder="./figures/"
                  ):
         self.num_tasks = num_tasks

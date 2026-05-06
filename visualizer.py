@@ -23,8 +23,8 @@ class NNVisualizer(NNAnalyzer):
                  hyperparam=(0, 0.1, 64, 50),
                  test_point_indices=None,
                  device='cpu',
-                 data_folder="./autodl-tmp/",
-                 save_folder="./autodl-tmp/figures/",
+                 data_folder="../results/",
+                 save_folder="./figures/",
                  num_workers=0,
                  ):
         super().__init__()
